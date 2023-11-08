@@ -43,7 +43,7 @@ function saveUserInfo(){
       // get information entered by user
       userName = document.getElementById("nameInput").value
       userSchool = document.getElementById("schoolInput").value
-      usercity = document.getElementById("cityInput").value
+      userCity = document.getElementById("cityInput").value
 
 
       currentUser.update({
@@ -52,5 +52,6 @@ function saveUserInfo(){
             // there is no city in the firestore but that is okay because update will create the key
             city: userCity
       })
+      
       document.getElementById("personalInfoFields").disabled = true;
 }
